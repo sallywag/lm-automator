@@ -1,0 +1,22 @@
+components:
+  locator: '[component]'
+  ad:
+    add:
+      type: button
+      locator: .viewport-input__add-btn
+    size:
+      type: select
+      locator: .size-input__select
+    display-ad-text:
+      type: checkbox
+      locator: .viewport-input__display-input
+
+menus:
+  category:
+    pre-content:
+        - ad
+        - doomsday
+
+regions:
+  pre-content:
+    locator: .pre-content-region

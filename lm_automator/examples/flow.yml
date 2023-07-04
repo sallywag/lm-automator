@@ -1,0 +1,30 @@
+site: fox29
+
+tests:
+  - page: category
+    layout: entertainment
+    steps:
+      - action: add-components
+        region: pre-content
+        components:
+          - ad
+          - ad
+
+      - action: edit-component
+        region: pre-content
+        index: 1
+        component: ad
+        steps:
+          - action: click
+            input: add
+          - action: select
+            value: 300x250
+            input: size
+          - action: check
+            value: true
+            input: display-ad-text
+
+      - action: remove-component
+        region: pre-content
+        index: 2
+        component: ad

@@ -1,0 +1,4 @@
+site: 'foxsports'
+environment: 'dev'
+username: 'admin'
+password: 'password'
